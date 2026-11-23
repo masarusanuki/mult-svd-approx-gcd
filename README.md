@@ -53,3 +53,7 @@ SVDLift:-Solve(F2, G2, tv, 3, 6, x, mode = "ill", jstar = 1)[1];   # 2 次元自
 - 密な場合の乗数次数 D の判定は許容誤差 tol = max(1e-8, 1e4*eps)。ノイズ下ではここが最も不安定（16/20 正解）。
 - `prototype_python/` は Maple が動かなかった時期の NumPy 試作。Maple 版と同じアルゴリズムで、数値もほぼ一致した。
 - Maple の注意：スクリプトのトップレベルで `D` に代入しないこと（微分演算子で保護されている）。
+
+## License
+
+MIT License (see `LICENSE`).
