@@ -1,0 +1,31 @@
+Warning, (in SVDLift:-Monomials) `i` is implicitly declared local
+|svdlift.mpl:63|
+Warning, (in SVDLift:-Monomials) `mm` is implicitly declared local
+|svdlift.mpl:63|
+Warning, (in SVDLift:-InitSVD) `i` is implicitly declared local
+|svdlift.mpl:108|
+Warning, (in anonymous procedure within SVDLift:-MatVec) `j` is implicitly
+declared local |svdlift.mpl:125|
+Error, attempting to assign to `D` which is protected.  Try declaring `local D`;
+see ?protect for details.
+l=2 dt=1 eps=0 done
+l=2 dt=1 eps=1e-08 done
+l=2 dt=1 eps=1e-06 done
+l=2 dt=2 eps=0 done
+l=2 dt=2 eps=1e-08 done
+l=2 dt=2 eps=1e-06 done
+l=2 dt=3 eps=0 done
+l=2 dt=3 eps=1e-08 done
+l=2 dt=3 eps=1e-06 done
+l=3 dt=1 eps=0 done
+l=3 dt=1 eps=1e-08 done
+l=3 dt=1 eps=1e-06 done
+l=3 dt=2 eps=0 done
+l=3 dt=2 eps=1e-08 done
+l=3 dt=2 eps=1e-06 done
+l=4 dt=1 eps=0 done
+l=4 dt=1 eps=1e-08 done
+l=4 dt=1 eps=1e-06 done
+l=4 dt=2 eps=0 done
+l=4 dt=2 eps=1e-08 done
+l=4 dt=2 eps=1e-06 done

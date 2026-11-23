@@ -1,0 +1,30 @@
+================ Section 2 ================
+[PASS] 2.a    Ex.1: detected k=3, K=8
+[PASS] 2.b    Ex.1: sigma_8/sigma_1=5.1e-17, sigma_7/sigma_1=0.21
+[PASS] 2.c    Ex.1: ||r^(w) - r_true^(w)|| for w=0..4: 5.9e-15 8.7e-15 1.1e-14 1.4e-14 1.5e-14  (w=3,4 must be 0: termination)
+[PASS] 2.d    Ex.1: |u_K^T p^(w)| = 8.4e-15 1.0e-14 7.3e-15 8.9e-15 ; |(I-UU^T)p^(w)| = 2.3e-14 3.6e-14 5.8e-15 5.0e-15 
+[PASS] 2.e    Ex.1: 1/sigma_i (i=1..K-1) = 0.06 0.07 0.08 0.11 0.21 0.25 0.29 
+[PASS] 2.m    Ex.1: a = 18.54, a/sigma_i in [1.15, 5.37] (i<=K-1); observed error growth per degree 1.46 1.29 1.23 1.09 
+[PASS] 2.n    ||S_{k-1}(dF,dG)||_2 <= sqrt(max(m,n)-k+1) ||(dF,dG)|| on 20 random pairs (m=n=6, k=3)
+[PASS] 2.f    Ex.2 standard: errors w=0..4: 7.3e-12 7.3e-08 7.3e-04 7.3e+00 7.3e+04 ; growth e_w/e_{w-1} (w=2,3) = 1.0e+04 1.0e+04  <= 1+kappa*a = 5.4e+05
+[PASS] 2.g    Ex.2: 1/sigma_i (i<=K-2) max 0.40 (damping); 1/sigma_{K-1} = 1630 (only amplifying direction)
+[PASS] 2.h    Ex.2 (text values): t1-coef of entries 2, K at w=1: -1.572e-09, -1.572e-09; t1^2-coef of entry 2 at w=2: -7.863e-06; residual norms (deg 1, deg 2): 9.3e-15, 5.5e-15
+[PASS] 2.i    Ex.2: growth w=1->2 = 1.0e+04 vs sigma_1/sigma_{K-1} = 3.2e+04
+[PASS] 2.j    dense: smallest/largest singular value of M_D for D=0..true: l=2 D=1 ratios 1e+00 9e-15 ; l=2 D=2 ratios 1e+00 4e-01 1e-09 ; l=3 D=1 ratios 1e+00 9e-15 ; l=3 D=2 ratios 1e+00 2e-01 1e-13 ; 
+[PASS] 2.k    cond of stacked convolution matrix: Ex.1 1.15, Ex.2 2.69, 60 random (sparse/dense): max 2.89, median 1.72
+[PASS] 2.l    terms of F: sparse random (d_t=3) 83 -> 92 after shift (1/2,1/2);  Ex.2 70 -> 68
+================ Section 3 ================
+[PASS] 3.a    Ex.2: degree at t=0 with tol 1e-3: 4, with tol 1e-8: 3; exact deg gcd(F,G) = 3
+[PASS] 3.b    Ex.2: the extra linear factors at t=0 are x-1.0003 and x-1.0005, both within 1e-4 of x-1.0004
+[PASS] 3.c    Ex.2 singular values: 19.8 18.4 14.6 12.9 8.36 6 4.28 2.47 0.000613 1.55e-15 
+[PASS] 3.d    sin of largest principal angle between span{v9,v10} and the exact 2-dim kernel of the nearby pair: 1.8e-04
+[PASS] 3.e    cond_2(Bez^(0)_{k,n-1}): Ex.1 4.0e+00, Ex.2 3.2e+05
+[PASS] 3.f    vt[j*] = 0.0e+00
+[PASS] 3.g    L = u_{K-1}^T dS^(1) vt = 3.0662*t2-3.0663*t1; affine check residuals 3.9e-15, 5.4e-15
+[PASS] 3.h    l=2: dim F[t]_{w+1} = dim F[t]_w + 1 (overdetermined by one); for l=1 the system is square
+[PASS] 3.i    errors per pass 1.8e-01 4.6e-04 5.9e-07 3.6e-10 8.5e-12 ; ratios 2.5e-03 1.3e-03 6.1e-04 ; sigma_{K-1}/|L| = 2.0e-04 (same order within a factor 15)
+[PASS] 3.j    delta=0.1 (sigma_{K-1}/sigma_1=1e-2): two-dim 8.7e-02, standard 1.0e-07
+[PASS] 3.k    Ex.2, eps=0, standard lifting at shifted points [[16/25, 1/20], [1/2, 0], [0, 1/2], [1/2, 1/2], [-1/100, 89/100], [1, 1]]: ratios 1.5e-01 1.2e-01 2.8e-02 1.7e-02 1.7e-02 8.6e-03 ; errors 4.3e-13 7.0e-13 1.3e-11 4.5e-11 3.7e-09 9.6e-11 ; two-dim at origin 7.6e-12
+[PASS] 3.l    Ex.2, eps=1e-10: standard at the shifted points 1.7e-08 3.6e-08 1.4e-06 5.2e-06 4.5e-04 3.0e-05 ; two-dim at origin 3.9e-07
+[PASS] 3.m    cost of adaptive: 1 standard lifting + npass (=6) passes of the two-dimensional lifting (by construction of SolveAdaptive/LiftIll)
+27 PASS, 0 FAIL

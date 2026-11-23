@@ -1,0 +1,31 @@
+[PASS] 4.1a  Ex.1 exact: GCD error at machine-epsilon level (2.6e-15)
+[PASS] 4.1b  Ex.1 noisy: GCD error / eps = ['5.7', '6.3'] (text: about 6)
+[PASS] 4.1c  Ex.1 noisy: Bezout lifting less accurate than proposed
+[PASS] 4.1d  Ex.2: standard and Bezout lifting fail (error ~1) for every eps
+[PASS] 4.1e  Ex.2 exact: two-dim GCD error 7.6e-12
+[PASS] 4.1f  Ex.2 noisy: two-dim error / eps = ['8.6e+03', '1.6e+03'] (text: 1e3--1e4)
+[PASS] 4.2a  eps=0: standard and Bezout accurate only for delta=1e-1
+[PASS] 4.2b  delta=1e-1: sigma_{K-1}/sigma_1 = 1e-2
+[PASS] 4.2c  eps=1e-10, delta=1e-1: standard / Bezout lose many digits (5.4e-03, 2.6e-01)
+[PASS] 4.2d  eps=0: two-dim accurate for delta<=1e-2, fails for 1e-1
+[PASS] 4.2e  adaptive choice = better of the two in all rows
+[PASS] 4.2f  eps=1e-10: two-dim error in [1e-7, 1e-6] for delta<=1e-3
+[PASS] 4.2g  passes: stagnation at 7.6e-12 (eps=0) and 1.1e-7 (eps=1e-10)
+[PASS] 4.2h  passes: each pass gains about three digits ['2.6e-03', '1.3e-03', '6.1e-04']
+[PASS] 4.2i  four or five passes are sufficient
+[PASS] 4.3a  dense exact: D correct in all cases
+[PASS] 4.3b  dense eps=1e-8: D correct 16/20
+[PASS] 4.3c  fixed normalisation: error of order one
+[PASS] 4.3d  dense exact: reconstruction to almost machine precision
+[PASS] 4.3e  dense eps=1e-8: median errors 8e-8 -- 3e-5 (8.4e-08 .. 2.6e-05)
+[PASS] 4.4a  direct matrix up to 1540x120
+[PASS] 4.4b  proposed faster except smallest problems (slower rows: [(2, 1, 0.0), (2, 1, 1e-08), (2, 1, 1e-06)])
+[PASS] 4.4c  l=4, d=2: speed-up ['5.56', '6.22', '8.23'] (text 5.6--8.2)
+[PASS] 4.4d  exact: median errors of order 1e-14 or smaller (max median 2.3e-14)
+[PASS] 4.4e  exact: occasional errors up to 1e-9 (1.3e-09)
+[PASS] 4.4f  noisy: direct SVD errors of order eps (max ratio 2.9)
+[PASS] 4.4g  noisy: median/eps in [3.3, 64.0] except l=3,d=2,eps=1e-6 (1.2e-03)
+[PASS] 4.4h  rows with max error >= 1e-1 without shift: [(2, 3, 1e-08), (3, 2, 1e-06), (4, 1, 1e-06), (4, 2, 1e-08)]
+[PASS] 4.4i  shift rule: worst errors as quoted, median 1.2e-3 -> 2.8e-05
+
+29 PASS, 0 FAIL
